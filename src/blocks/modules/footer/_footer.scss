@@ -1,0 +1,36 @@
+.footer{
+  &-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(211, 217, 232, 0.5);
+    padding: 20px 0 70px;
+  }
+  &-info{
+    color: rgba(71, 93, 126, 0.7);
+  }
+}
+
+.developer{
+  margin-left: 30px;
+  &__link{
+    border-bottom: 1px solid;
+    display: inline-block;
+    line-height: 14px;
+    transition: color .3s ease;
+    &:hover{
+      color: #343D4A;
+    }
+  }
+}
+
+.partners{
+  display: flex;
+  align-items: center;
+  &__item{
+    margin-right: 45px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

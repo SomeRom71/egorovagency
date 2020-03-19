@@ -1,0 +1,105 @@
+.news{
+  padding: 100px 0;
+  background: #F4F6FB;
+  &-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__link{
+      margin-left: auto;
+      color: #475D7E;
+      font-size: 1.125rem;
+      transition: color .3s ease;
+      &:hover{
+        color: #1D2229;
+        .news-header__arrow{
+          fill: #1D2229;
+        }
+      }
+    }
+    &__arrow{
+      width: 16px;
+      height: 8px;
+      fill: #475D7E;
+      transition: fill .3s ease;
+    }
+  }
+  &__title{
+    color: #343D4A;
+    font-weight: bold;
+    font-size: 3.125rem;
+  }
+}
+
+.slider{
+  margin-top: 40px;
+  overflow-x: hidden;
+  &-arrow{
+    width: 10px;
+    height: 20px;
+    fill: #475D7E;
+    transition: fill .3s ease;
+    &_prev{
+      transform: rotateY(180deg);
+    }
+  }
+  &-nav{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    &__btn{
+      width: 50px;
+      height: 50px;
+      border: 1px solid #D3D9E8;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .3s ease;
+      cursor: pointer;
+      &:not(.slick-disabled):hover{
+        background: #475D7E;
+        .slider-arrow{
+          fill: #fff;
+        }
+      }
+      &.slick-disabled{
+        cursor: not-allowed;
+        .slider-arrow{
+          fill: #D3D9E8;
+        }
+      }
+    }
+  }
+  &-counter{
+    margin: 0 15px;
+    color: #475D7E;
+    font-size: 1.125rem;
+  }
+  &-item{
+    background: #FFFFFF;
+    border: 1px solid #D3D9E8;
+    border-radius: 15px;
+    padding: 30px 30px 40px;
+    margin: 0 15px;
+    transition: border .3s ease;
+    cursor: pointer;
+    &__date{
+      font-size: 1rem;
+      color: #81899B;
+      font-weight: bold;
+    }
+    &__text{
+      font-size: 1.125rem;
+      color: #343D4A;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    &:hover{
+      border: 1px solid #475D7E;
+    }
+  }
+  .slick-list{
+    margin: 0 -15px;
+  }
+}

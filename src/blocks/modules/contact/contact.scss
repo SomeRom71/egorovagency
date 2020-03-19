@@ -1,0 +1,29 @@
+.contact{
+  padding: 100px 0 55px;
+  &__title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #343D4A;
+  }
+  &-list{
+    margin-top: 55px;
+  }
+  &-item{
+    display: inline-block;
+    color: #475D7E;
+    margin-right: 50px;
+    transition: color .3s ease;
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover{
+      color: #343D4A;
+    }
+    &__icon{
+      width: 30px;
+      max-height: 30px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+}
